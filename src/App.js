@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+
+import Navbar from './components/Navbar';
 
 const styles = {
   app: {
@@ -24,7 +25,7 @@ function App(props) {
 
   return (
     <div className={classes.app}>
-      <Button className={classes.root}>Higher-order component</Button>
+      <Navbar />
     </div>
   );
 }
