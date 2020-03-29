@@ -8,7 +8,7 @@ import Container from '@material-ui/core/Container';
 
 const styles = {
   navbar: {
-    backgroundColor: "red"
+    backgroundColor: "dark blue"
   },
 };
 
@@ -20,8 +20,12 @@ function Navbar(props) {
       <AppBar position="static" className={classes.navbar}>
           <Container>
              <Toolbar>
-                <Typography variant="h6">News</Typography>
-                <Button color="inherit">Login</Button>
+                <Typography style={{marginRight:'auto' }} variant="h6">The Funky Monkey</Typography>
+                <Button color="inherit">Home</Button>
+                <Button color="inherit">About</Button>
+                <Button color="inherit">Contact</Button>
+
+
             </Toolbar>
           </Container>
       </AppBar>
