@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
 import Navbar from './components/Navbar';
+import Page from './components/Page';
 
 const styles = {
   app: {
@@ -26,6 +27,7 @@ function App(props) {
   return (
     <div className={classes.app}>
       <Navbar />
+      <Page />
     </div>
   );
 }
