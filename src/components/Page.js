@@ -1,16 +1,17 @@
-import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-import { Grid, Paper, Container } from "@material-ui/core";
+import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import { Grid, Paper, Container } from '@material-ui/core';
+import PropTypes from 'prop-types';
 
-const styles = theme => ({
+const styles = (theme) => ({
   content: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   paper: {
     padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary
-  }
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
 });
 
 function Page(props) {
@@ -31,5 +32,9 @@ function Page(props) {
     </div>
   );
 }
+
+Page.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(styles)(Page);

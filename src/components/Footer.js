@@ -1,38 +1,73 @@
-import React, { Component } from "react";
-
+import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Typography from "@material-ui/core/Typography";
+import { Grid, Paper, Container } from '@material-ui/core';
+import PropTypes from 'prop-types';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
-const styles = {
+const styles = (theme) => ({
   footer: {
     padding: 5,
-    position: "absolute",
-    textAlign: "center",
+    position: 'absolute',
+    textAlign: 'left',
     left: 0,
     bottom: 0,
     right: 0,
+    backgroundColor: 'none',
   },
   footerTitle: {
-    color: 'red',
+    textAlign: 'left',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+    },
+    color: 'black',
   },
   socialFooter: {
-    background: 'none',
+    textAlign: 'right',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+    },
   },
-};
+  gitHubIcon: {
+    color: 'black',
+  },
+});
 
 class Footer extends Component {
   render() {
     const { classes } = this.props;
 
+    function handleOnClick() {
+      window.open('https://whatafunkymonkey.wordpress.com');
+    }
+
     return (
-      <div className={this.props.classes.footer}>
-        <div className={this.props.classes.footerTitle}>
-          Footer Text/name of site
-        </div>
-        <div className={this.props.classes.socialFooter}>Email</div>
+      <div className={classes.footer}>
+        <Container>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6} className={classes.footerTitle}>
+              <span
+                style={{ backgroundColor: 'none' }}
+                role="button"
+                focusable={true}
+                onClick={handleOnClick}
+              >
+                The Funky Monkey
+              </span>
+            </Grid>
+            <Grid item xs={12} md={6} className={classes.socialFooter}>
+              <a href="https://www.github.com">
+                <GitHubIcon className={classes.gitHubIcon} />
+              </a>
+            </Grid>
+          </Grid>
+        </Container>
       </div>
     );
   }
 }
+
+Footer.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(styles)(Footer);
