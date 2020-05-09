@@ -48,10 +48,13 @@ class Footer extends Component {
         <Container>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} className={classes.footerTitle}>
-              <span classname={classes.websiteNameFooter}
+              <span
+                className={classes.websiteNameFooter}
+                tabIndex={0}
                 role="button"
-                focusable={true}
+                focusable
                 onClick={handleOnClick}
+                onKeyPress={handleOnClick}
               >
                 The Funky Monkey
               </span>
