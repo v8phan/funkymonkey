@@ -30,6 +30,9 @@ const styles = (theme) => ({
   gitHubIcon: {
     color: 'black',
   },
+  websiteNameFooter: {
+    backgroundColor: 'none',
+  },
 });
 
 class Footer extends Component {
@@ -45,8 +48,7 @@ class Footer extends Component {
         <Container>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} className={classes.footerTitle}>
-              <span
-                style={{ backgroundColor: 'none' }}
+              <span classname={classes.websiteNameFooter}
                 role="button"
                 focusable={true}
                 onClick={handleOnClick}
