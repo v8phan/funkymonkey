@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 import Navbar from './components/Navbar';
 import Page from './components/Page';
+import Footer from './components/Footer';
 
 const styles = {
   app: {
@@ -28,6 +29,7 @@ function App(props) {
     <div className={classes.app}>
       <Navbar />
       <Page />
+      <Footer />
     </div>
   );
 }
