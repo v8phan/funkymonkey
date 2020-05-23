@@ -7,7 +7,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 const styles = (theme) => ({
   footer: {
     padding: 5,
-    position: 'absolute',
+    position: 'relative',
     textAlign: 'left',
     left: 0,
     bottom: 0,
