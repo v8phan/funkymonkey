@@ -4,6 +4,7 @@ import { Grid, Paper, Container } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import BlogPost from './BlogPost/BlogPost';
 import blogList from './BlogPost/blogs';
+import Sidebar from './Sidebar';
 
 const styles = (theme) => ({
   content: {
@@ -38,7 +39,7 @@ function Page(props) {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Paper className={classes.paper}>Sidebar</Paper>
+            <Sidebar />
           </Grid>
         </Grid>
       </Container>

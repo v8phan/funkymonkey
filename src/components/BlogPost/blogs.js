@@ -5,6 +5,37 @@ import nightfamily from '../../images/nightfamily.jpg';
 
 const blogList = [
   {
+    name: 'Sample Sampler: The Jones Girls - Who Can I Run To',
+    blogSideDate: 'September 2, 2017',
+    blogSideTags:
+      'Anderson .Paak, Bas, hip hop, Isaiah Rashad, Junggigo, samples, Xscape',
+    description: (
+      <div>
+        <p>
+          I love samples of all kinds, whether I find them in hip hop, K-pop, or
+          Costco. Particularly, I'm interested in how artists, often in very
+          contrasting genres, can take the same sample and reinterpret it
+          uniquely. Sample clearance issues are so lame; if you wanted your
+          music to last and be remembered, wouldn't you want to let other
+          artists be inspired by your music and use it and perpetuate it?
+          Anyway, here's one of my favorite samples of all time, which I first
+          encountered in one of my favorite songs of all time: Sounds From
+          Friday Morning by Isaiah Rashad.
+        </p>
+      </div>
+    ),
+    link: (
+      <iframe
+        src="https://open.spotify.com/embed/track/3sFoSCg2KoaCUrOeKYMqvI"
+        width="300"
+        height="380"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      ></iframe>
+    ),
+  },
+  {
     name: 'The Last Shadow Puppets – The Age of the Understatement',
     blogSideDate: 'September 2, 2017',
     blogSideTags:

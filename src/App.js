@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-
 import Navbar from './components/Navbar';
 import Page from './components/Page';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import About from './components/About';
+import Contact from './components/Contact';
+import postSeparate from './components/BlogPost/postSeparate';
 
 const styles = {
   app: {
@@ -27,8 +30,15 @@ function App(props) {
 
   return (
     <div className={classes.app}>
-      <Navbar />
-      <Page />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Page} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/blogs/:id" component={postSeparate} />
+        </Switch>
+      </Router>
       <Footer />
     </div>
   );
