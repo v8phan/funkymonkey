@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Grid, Divider, Container } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const styles = (theme) => ({
   content: {
@@ -35,7 +36,13 @@ function BlogPost(props) {
     alt,
     description,
     link,
+    id,
+    sepContent,
   } = props;
+
+  useEffect(() => {
+    console.log(props);
+  }, []);
 
   return (
     <Container>
@@ -45,7 +52,13 @@ function BlogPost(props) {
           {blogSideTags}
         </Grid>
         <Grid item xs={9}>
-          <h1>{name}</h1>
+          <Link
+            to={{
+              pathname: `/blogs/${id}`,
+            }}
+          >
+            <h1>{name}</h1>
+          </Link>
           {image && <img className={classes.image} src={image} alt={alt} />}
           <p className={classes.description}>{description}</p>
           <div className={classes.mediaContainer}>{link}</div>
@@ -57,3 +70,5 @@ function BlogPost(props) {
 }
 
 export default withStyles(styles)(BlogPost);
+
+//final stop

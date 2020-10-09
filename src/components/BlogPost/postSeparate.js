@@ -2,28 +2,40 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { render } from '@testing-library/react';
-import blogs from './BlogPost/blogs';
-
-
-const sepBlogs = [
-  {
-    id: '1',
-    description: 'penis',
-  },
-  {
-    id: '2',
-    description: 'penis2',
-  },
-  {
-    id: '3',
-    description: 'penis3',
-  },
-];
+import blogList from './blogs';
+import blogs from './blogs.js';
 
 function postSeparate(props) {
-  const { id, description } = props;
-  console.log(props);
-  return <div>{sepBlogs[props.match.params.id].description}</div>;
+  return (
+    <div>
+      {blogList
+        .filter((blog) => blog.id == props.match.params.id)
+        .map((filteredBlog) => {
+          return (
+            <div>
+              {filteredBlog.sepContent ? (
+                <div>
+                  {filteredBlog.name}
+                  {filteredBlog.description}
+                  {filteredBlog.sepContent}
+                  {filteredBlog.blogSideDate}
+                  {filteredBlog.blogSideTags}
+                </div>
+              ) : (
+                <div>
+                  {filteredBlog.name}
+                  {filteredBlog.description}
+                  {filteredBlog.image}
+                  {filteredBlog.link}
+                  {filteredBlog.blogSideDate}
+                  {filteredBlog.blogSideTags}
+                </div>
+              )}
+            </div>
+          );
+        })}
+    </div>
+  );
 }
 
 export default postSeparate;

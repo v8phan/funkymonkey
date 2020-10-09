@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Navbar from './components/Navbar';
 import Page from './components/Page';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import About from './components/About';
 import Contact from './components/Contact';
 import postSeparate from './components/BlogPost/postSeparate';
