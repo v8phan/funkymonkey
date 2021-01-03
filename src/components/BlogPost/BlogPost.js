@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Grid, Divider, Container } from '@material-ui/core';
 import { Link } from 'react-router-dom';
@@ -37,12 +37,7 @@ function BlogPost(props) {
     description,
     link,
     id,
-    sepContent,
   } = props;
-
-  useEffect(() => {
-    console.log(props);
-  }, []);
 
   return (
     <Container>

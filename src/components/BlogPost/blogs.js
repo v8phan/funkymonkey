@@ -96,7 +96,7 @@ const blogList = [
     description: (
       <div>
         <p>
-          A name like Chicano Batman in automatically interesting. I was lucky
+          A name like Chicano Batman is automatically interesting. I was lucky
           enough to see these guys put on a free show in Austin and to me
           watching them play was just that, they looked like they were having a
           blast, despite wearing slick three-piece suits in sweltering Texas
