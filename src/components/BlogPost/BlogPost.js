@@ -1,13 +1,16 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Grid, Divider, Container } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const styles = (theme) => ({
   content: {
     flexGrow: 1,
   },
   description: {
-    padding: `${theme.spacing(2)}px ${theme.spacing(2)}px ${theme.spacing(2)}px 0px`,
+    padding: `${theme.spacing(2)}px ${theme.spacing(2)}px ${theme.spacing(
+      2
+    )}px 0px`,
     textAlign: 'left',
     color: theme.palette.text.secondary,
   },
@@ -16,7 +19,7 @@ const styles = (theme) => ({
     width: '70%',
   },
   blogSide: {
-    marginTop: '120px',
+    marginTop: '100px',
   },
   mediaContainer: {
     marginBottom: '50px',
@@ -24,7 +27,17 @@ const styles = (theme) => ({
 });
 
 function BlogPost(props) {
-  const { classes, blogSideDate, blogSideTags, name, image, alt, description, link } = props;
+  const {
+    classes,
+    blogSideDate,
+    blogSideTags,
+    name,
+    image,
+    alt,
+    description,
+    link,
+    id,
+  } = props;
 
   return (
     <Container>
@@ -34,10 +47,16 @@ function BlogPost(props) {
           {blogSideTags}
         </Grid>
         <Grid item xs={9}>
-          <h1>{name}</h1>
+          <Link
+            to={{
+              pathname: `/blogs/${id}`,
+            }}
+          >
+            <h1>{name}</h1>
+          </Link>
           {image && <img className={classes.image} src={image} alt={alt} />}
           <p className={classes.description}>{description}</p>
-          <div className={classes.mediaContainer}> {link}</div>
+          <div className={classes.mediaContainer}>{link}</div>
         </Grid>
       </Grid>
       <Divider />
@@ -46,3 +65,5 @@ function BlogPost(props) {
 }
 
 export default withStyles(styles)(BlogPost);
+
+//final stop

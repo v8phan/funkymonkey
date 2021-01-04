@@ -5,14 +5,17 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
+import { Link } from 'react-router-dom';
 
 const styles = {
+  title: {
+    marginRight: 'auto',
+  },
   navbar: {
     backgroundColor: 'dark blue',
-    title: { marginRight: 'auto' },
   },
   navbarButtons: {
-    marginLeft: 'auto',
+    color: 'white',
   },
 };
 
@@ -20,22 +23,24 @@ function Navbar(props) {
   const { classes } = props;
 
   return (
-    <div>
-      <AppBar position="static" className={classes.navbar}>
-        <Container>
-          <Toolbar>
-            <Typography className={classes.title} variant="h6">
-              The Funky Monkey
-            </Typography>
-            <Button className={classes.navbarButtons} color="inherit">
-              Home
-            </Button>
-            <Button color="inherit">About</Button>
-            <Button color="inherit">Contact</Button>
-          </Toolbar>
-        </Container>
-      </AppBar>
-    </div>
+    <AppBar position="static" className={classes.navbar}>
+      <Container>
+        <Toolbar>
+          <Typography className={classes.title} variant="h6">
+            The Funky Monkey
+          </Typography>
+          <Link to="/">
+            <Button className={classes.navbarButtons}>Home</Button>
+          </Link>
+          <Link to="/about">
+            <Button className={classes.navbarButtons}>About</Button>
+          </Link>
+          <Link to="/contact">
+            <Button className={classes.navbarButtons}>Contact</Button>
+          </Link>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 }
 
