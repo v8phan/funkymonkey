@@ -9,10 +9,12 @@ import Sidebar from './Sidebar';
 const styles = (theme) => ({
   content: {
     flexGrow: 1,
+    backgroundColor: 'steelblue',
   },
   paper: {
     padding: theme.spacing(2),
     color: theme.palette.text.secondary,
+    backgroundColor: 'skyblue',
   },
 });
 

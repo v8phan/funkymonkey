@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { withStyles } from '@material-ui/core/styles';
+
 import { render } from '@testing-library/react';
 import { Container } from '@material-ui/core';
-
 import blogList from './blogs';
-import blogs from './blogs.js';
+
+const styles = {
+  test: {
+    color: 'red',
+  },
+};
 
 function postSeparate(props) {
+  const { classes } = props;
+
   return (
-    <Container >
+    <Container>
       {blogList
-        .filter((blog) => blog.id == props.match.params.id)
+        .filter((blog) => blog.id === props.match.params.id)
         .map((filteredBlog) => {
           return (
-            <div>
+            <div className={classes.test}>
               {filteredBlog.name}
               {filteredBlog.description}
               {filteredBlog.sepContent ? (
@@ -34,4 +42,4 @@ function postSeparate(props) {
   );
 }
 
-export default postSeparate;
+export default withStyles(styles)(postSeparate);
