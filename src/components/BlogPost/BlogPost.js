@@ -20,7 +20,6 @@ const styles = (theme) => ({
   image: {
     maxHeight: '800px',
     width: '70%',
-    paddingTop: 50,
   },
   blogSide: {
     marginTop: '100px',
@@ -37,7 +36,9 @@ const styles = (theme) => ({
     fontFamily: 'Inconsolata',
     fontWeight: 'bold',
     textDecoration: 'none',
+    float: 'left',
     color: 'black',
+    paddingBottom: 50,
     '&:hover': {
       color: 'red',
     },
