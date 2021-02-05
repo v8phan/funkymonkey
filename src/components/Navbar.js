@@ -6,6 +6,9 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import { Link } from 'react-router-dom';
+import { compose } from 'recompose';
+import withWidth from '@material-ui/core/withWidth';
+import PropTypes from 'prop-types';
 
 const styles = {
   title: {
@@ -17,16 +20,23 @@ const styles = {
   navbarButtons: {
     color: 'white',
   },
+  titleSmall: {
+    marginRight: 'auto',
+    fontSize: '14px',
+  },
 };
 
 function Navbar(props) {
-  const { classes } = props;
+  const { classes, width } = props;
 
   return (
     <AppBar position="static" className={classes.navbar}>
       <Container>
         <Toolbar>
-          <Typography className={classes.title} variant="h6">
+          <Typography
+            className={width === 'xs' ? classes.titleSmall : classes.title}
+            variant="h6"
+          >
             The Funky Monkey
           </Typography>
           <Link to="/">
@@ -44,4 +54,8 @@ function Navbar(props) {
   );
 }
 
-export default withStyles(styles)(Navbar);
+Navbar.propTypes = {
+  classes: PropTypes.object.isRequired,
+  width: PropTypes.object.isRequired,
+};
+export default compose(withStyles(styles), withWidth())(Navbar);

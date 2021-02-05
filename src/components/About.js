@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
 
-const styles = (theme) => ({
+const styles = {
   title: {
     color: 'default',
     marginLeft: '50px',
@@ -9,7 +10,7 @@ const styles = (theme) => ({
   paragraph: {
     marginLeft: '100px',
   },
-});
+};
 
 class About extends Component {
   render() {
@@ -26,4 +27,7 @@ class About extends Component {
   }
 }
 
+About.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 export default withStyles(styles)(About);

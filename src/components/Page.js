@@ -27,7 +27,6 @@ function Page(props) {
           <Grid item xs={12} sm={8}>
             <Paper className={classes.paper}>
               {blogList.map((blog, index) => {
-                console.log(blog);
                 return (
                   <BlogPost
                     blogSideTags={blog.blogSideTags}

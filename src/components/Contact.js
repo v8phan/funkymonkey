@@ -39,9 +39,7 @@ class Contact extends Component {
     alert(`${this.state.email} ${this.state.message}`);
     event.preventDefault();
 
-    axios
-    .post(`/api/email`, { email, message })
-    .then((res) => {
+    axios.post(`/api/email`, { email, message }).then((res) => {
       console.log(res);
       console.log(res.data);
     });
@@ -49,7 +47,6 @@ class Contact extends Component {
     axios.get('/api/test').then((response) => {
       console.log(response);
     });
-
   };
 
   render() {
@@ -80,7 +77,7 @@ class Contact extends Component {
               onChange={this.handleMessageChange}
             ></textarea>
           </label>
-          <button type="submit">Submit</button> />
+          <button type="submit">Submit</button>
         </form>
       </div>
     );

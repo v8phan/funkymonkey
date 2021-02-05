@@ -14,48 +14,61 @@ const blogList = [
       'Aretha Franklin, hip hop, Mos Def, Ms. Fat Booty, oldies, One Step Ahead, samples',
     description: (
       <p>
-        For this sample sampler, I'm presenting one of hip hop's favorite soul
-        samples of all time: soul queen Aretha Franklin's One Step Ahead,
-        popularized by Mos Def in Ms. Fat Booty.
+        For this sample sampler, I&apos;m presenting one of hip hop&apos;s
+        favorite soul samples of all time: soul queen Aretha Franklin&apos;s One
+        Step Ahead, popularized by Mos Def in Ms. Fat Booty.
       </p>
     ),
     link: (
       <iframe
+        title="onestepahead"
         src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A0dSRoWYf0GOzX9L44g53sZ"
         width="300"
         height="380"
-        frameborder="0"
+        frameBorder="0"
         allowtransparency="true"
         allow="encrypted-media"
-      ></iframe>
+      />
     ),
     id: '13',
     sepContent: (
       <div>
         <iframe
+          title="onestepahead"
+          src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A0dSRoWYf0GOzX9L44g53sZ"
+          width="300"
+          height="380"
+          frameBorder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        />
+        <iframe
+          title="msfatbooty"
           src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A0IVAlb0cFCH1cQ974iR1TU"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
         <iframe
+          title="engelwood"
           width="100%"
           height="166"
           scrolling="no"
-          frameborder="no"
+          frameBorder="no"
           allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226618088&color=%23ff9900&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
+        />
         <iframe
+          title="bluexile"
           src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A53GyUog0e8fbctqyJieLS2"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
       </div>
     ),
   },
@@ -84,7 +97,7 @@ const blogList = [
         frameBorder="no"
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/352478017&color=%23ff9900&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-      ></iframe>
+      />
     ),
     id: '12',
     sepContent: null,
@@ -120,13 +133,14 @@ const blogList = [
     ),
     link: (
       <iframe
-        width="560"
+        title="blacklipstick"
+        width="auto"
         height="315"
         src="https://www.youtube.com/embed/3sOXiL05VSY"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+        allowFullScreen
+      />
     ),
     id: '11',
     sepContent: null,
@@ -166,10 +180,10 @@ const blogList = [
         src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A37d3I8tpth0aPQoCaTdx8C"
         width="300"
         height="380"
-        frameborder="0"
+        frameBorder="0"
         allowtransparency="true"
         allow="encrypted-media"
-      ></iframe>
+      />
     ),
     id: '10',
     sepContent: null,
@@ -201,13 +215,14 @@ const blogList = [
     ),
     link: (
       <iframe
+        title="lost cool calm pete"
         src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A0SVnQiFDcdqgQqtrZugu7R"
         width="300"
         height="380"
-        frameborder="0"
+        frameBorder="0"
         allowtransparency="true"
         allow="encrypted-media"
-      ></iframe>
+      />
     ),
     id: '9',
     sepContent: null,
@@ -221,13 +236,13 @@ const blogList = [
       <div>
         <p>
           I love samples of all kinds, whether I find them in hip hop, K-pop, or
-          Costco. Particularly, I'm interested in how artists, often in very
-          contrasting genres, can take the same sample and reinterpret it
+          Costco. Particularly, I&apos;m interested in how artists, often in
+          very contrasting genres, can take the same sample and reinterpret it
           uniquely. Sample clearance issues are so lame; if you wanted your
-          music to last and be remembered, wouldn't you want to let other
+          music to last and be remembered, wouldn&apos;t you want to let other
           artists be inspired by your music and use it and perpetuate it?
-          Anyway, here's the song behind one of my favorite samples of all time,
-          used in Sounds From Friday Morning by Isaiah Rashad.
+          Anyway, here&apos;s the song behind one of my favorite samples of all
+          time, used in Sounds From Friday Morning by Isaiah Rashad.
         </p>
       </div>
     ),
@@ -237,10 +252,10 @@ const blogList = [
         src="https://open.spotify.com/embed/track/3sFoSCg2KoaCUrOeKYMqvI"
         width="300"
         height="380"
-        frameborder="0"
+        frameBorder="0"
         allowtransparency="true"
         allow="encrypted-media"
-      ></iframe>
+      />
     ),
     id: '8',
     sepContent: (
@@ -250,60 +265,60 @@ const blogList = [
           src="https://open.spotify.com/embed/track/3sFoSCg2KoaCUrOeKYMqvI"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
 
         <iframe
           title="Xscape - Who Can I Run To"
           src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A0wdaPticLmmqJdhgLDJ9zI"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
 
         <iframe
           title="Isaiah Rashad - Sounds From Friday Morning"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/4i4SoLdZd0Q"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+          allowFullScreen
+        />
 
         <iframe
           title="Junggigo - DLMN"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/mYDkrYdKq-A"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+          allowFullScreen
+        />
 
         <iframe
           title="Bas - Last Winter"
           src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A4xw3qwy1dr3TLNQ4K6sYNz"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
 
         <iframe
           title="Anderson Paak - Might Be"
           src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A2WlOO5UM3eoEQt7Z2z3PU1"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
       </div>
     ),
   },
@@ -447,8 +462,8 @@ const blogList = [
     blogSideTags: '80s, Anna Wise, groovy, MNDSGN',
     description: (
       <p>
-        MNDSGN's funky basslines and Anna Wise showing us why she's one of
-        Kendrick Lamar's favorite collabs (Real, These Walls,
+        MNDSGN&apos;s funky basslines and Anna Wise showing us why she&apos;s
+        one of Kendrick Lamar&apos;s favorite collabs (Real, These Walls,
         Institutionalized.)
       </p>
     ),
@@ -502,9 +517,7 @@ const blogList = [
 ];
 
 export default blogList;
-
-{
-  /* 
+/* 
 name: '',
 blogSideDate: '',
 blogSideTags: '',
@@ -515,4 +528,3 @@ link: ,
 id: ,
 sepContent: ,
 */
-}

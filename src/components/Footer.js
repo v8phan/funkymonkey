@@ -12,14 +12,15 @@ const styles = (theme) => ({
     left: 0,
     bottom: 0,
     right: 0,
-    backgroundColor: 'none',
+    top: 20,
+    backgroundColor: 'black',
   },
   footerTitle: {
     textAlign: 'left',
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center',
     },
-    color: 'black',
+    color: 'white',
   },
   socialFooter: {
     textAlign: 'right',
@@ -28,10 +29,10 @@ const styles = (theme) => ({
     },
   },
   gitHubIcon: {
-    color: 'black',
+    color: 'white',
   },
   websiteNameFooter: {
-    backgroundColor: 'none',
+    backgroundColor: 'black',
   },
 });
 
