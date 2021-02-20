@@ -94,6 +94,6 @@ function Slideshow(props) {
 
 Slideshow.propTypes = {
   classes: PropTypes.object.isRequired,
-  width: PropTypes.object.isRequired,
+  width: PropTypes.string.isRequired,
 };
 export default compose(withStyles(styles), withWidth())(Slideshow);

@@ -29,6 +29,7 @@ function Page(props) {
               {blogList.map((blog, index) => {
                 return (
                   <BlogPost
+                    key={blog.id}
                     blogSideTags={blog.blogSideTags}
                     blogSideDate={blog.blogSideDate}
                     name={blog.name}

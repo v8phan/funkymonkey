@@ -56,6 +56,6 @@ function Navbar(props) {
 
 Navbar.propTypes = {
   classes: PropTypes.object.isRequired,
-  width: PropTypes.object.isRequired,
+  width: PropTypes.string.isRequired,
 };
 export default compose(withStyles(styles), withWidth())(Navbar);

@@ -13,11 +13,11 @@ const blogList = [
     blogSideTags:
       'Aretha Franklin, hip hop, Mos Def, Ms. Fat Booty, oldies, One Step Ahead, samples',
     description: (
-      <p>
+      <span>
         For this sample sampler, I&apos;m presenting one of hip hop&apos;s
         favorite soul samples of all time: soul queen Aretha Franklin&apos;s One
         Step Ahead, popularized by Mos Def in Ms. Fat Booty.
-      </p>
+      </span>
     ),
     link: (
       <iframe

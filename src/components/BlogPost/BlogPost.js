@@ -128,18 +128,23 @@ function BlogPost(props) {
   );
 }
 
+BlogPost.defaultProps = {
+  image: '',
+  alt: '',
+};
+
 // export default withStyles(styles)(BlogPost);
 BlogPost.propTypes = {
   classes: PropTypes.object.isRequired,
-  blogSideDate: PropTypes.object.isRequired,
-  blogSideTags: PropTypes.object.isRequired,
-  name: PropTypes.object.isRequired,
-  image: PropTypes.object.isRequired,
-  alt: PropTypes.object.isRequired,
+  blogSideDate: PropTypes.string.isRequired,
+  blogSideTags: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  alt: PropTypes.string,
   description: PropTypes.object.isRequired,
   link: PropTypes.object.isRequired,
-  id: PropTypes.object.isRequired,
-  divider: PropTypes.object.isRequired,
-  width: PropTypes.object.isRequired,
+  id: PropTypes.string.isRequired,
+  // divider: PropTypes.object.isRequired,
+  width: PropTypes.string.isRequired,
 };
 export default compose(withStyles(styles), withWidth())(BlogPost);
