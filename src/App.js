@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
 import postSeparate from './components/BlogPost/postSeparate';
+import Slideshow from './components/Slideshow';
 
 const styles = {
   app: {
@@ -33,6 +34,7 @@ function App(props) {
     <div className={classes.app}>
       <Router>
         <Navbar />
+        <Slideshow />
         <Switch>
           <Route path="/" exact component={Page} />
           <Route path="/about" component={About} />

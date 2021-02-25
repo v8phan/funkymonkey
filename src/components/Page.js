@@ -9,10 +9,12 @@ import Sidebar from './Sidebar';
 const styles = (theme) => ({
   content: {
     flexGrow: 1,
+    backgroundColor: 'black',
   },
   paper: {
     padding: theme.spacing(2),
     color: theme.palette.text.secondary,
+    backgroundColor: 'white',
   },
 });
 
@@ -25,9 +27,9 @@ function Page(props) {
           <Grid item xs={12} sm={8}>
             <Paper className={classes.paper}>
               {blogList.map((blog, index) => {
-                console.log(blog);
                 return (
                   <BlogPost
+                    key={blog.id}
                     blogSideTags={blog.blogSideTags}
                     blogSideDate={blog.blogSideDate}
                     name={blog.name}

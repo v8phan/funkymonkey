@@ -13,49 +13,62 @@ const blogList = [
     blogSideTags:
       'Aretha Franklin, hip hop, Mos Def, Ms. Fat Booty, oldies, One Step Ahead, samples',
     description: (
-      <p>
-        For this sample sampler, I'm presenting one of hip hop's favorite soul
-        samples of all time: soul queen Aretha Franklin's One Step Ahead,
-        popularized by Mos Def in Ms. Fat Booty.
-      </p>
+      <span>
+        For this sample sampler, I&apos;m presenting one of hip hop&apos;s
+        favorite soul samples of all time: soul queen Aretha Franklin&apos;s One
+        Step Ahead, popularized by Mos Def in Ms. Fat Booty.
+      </span>
     ),
     link: (
       <iframe
+        title="onestepahead"
         src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A0dSRoWYf0GOzX9L44g53sZ"
         width="300"
         height="380"
-        frameborder="0"
+        frameBorder="0"
         allowtransparency="true"
         allow="encrypted-media"
-      ></iframe>
+      />
     ),
     id: '13',
     sepContent: (
       <div>
         <iframe
+          title="onestepahead"
+          src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A0dSRoWYf0GOzX9L44g53sZ"
+          width="300"
+          height="380"
+          frameBorder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        />
+        <iframe
+          title="msfatbooty"
           src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A0IVAlb0cFCH1cQ974iR1TU"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
         <iframe
+          title="engelwood"
           width="100%"
           height="166"
           scrolling="no"
-          frameborder="no"
+          frameBorder="no"
           allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226618088&color=%23ff9900&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
+        />
         <iframe
+          title="bluexile"
           src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A53GyUog0e8fbctqyJieLS2"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
       </div>
     ),
   },
@@ -66,14 +79,14 @@ const blogList = [
     image: timefive,
     alt: 'Gentle Breeze',
     description: (
-      <p>
+      <span>
         I made the debut city pop curated playlist back when I first became
         infatuated with this genre, and was about twenty albums in. Since then
         that infatuation has become somewhat of an obsession, and I’ve
         temporarily put everything else on the back burner while I mine deeper
         and deeper. A few months later, I’m over eighty albums in, and I hope
         that this playlist will reflect that.
-      </p>
+      </span>
     ),
     link: (
       <iframe
@@ -84,7 +97,7 @@ const blogList = [
         frameBorder="no"
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/352478017&color=%23ff9900&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-      ></iframe>
+      />
     ),
     id: '12',
     sepContent: null,
@@ -94,8 +107,8 @@ const blogList = [
     blogSideDate: 'September 8, 2017',
     blogSideTags: 'bossa nova, Chicano Batman, funk, Los Angeles, wah',
     description: (
-      <div>
-        <p>
+      <span>
+        <span>
           A name like Chicano Batman is automatically interesting. I was lucky
           enough to see these guys put on a free show in Austin and to me
           watching them play was just that, they looked like they were having a
@@ -110,23 +123,24 @@ const blogList = [
           with every note. Brimming with filthy 70s organ riffs and wah guitar
           solos, Chicano Batman will find you wherever you are, just like
           Batman.
-        </p>
-        <p>
+        </span>
+        <span>
           Favorite song(s):
           <b> Cycles of Existential Rhyme, Black Lipstick </b>
           (single)
-        </p>
-      </div>
+        </span>
+      </span>
     ),
     link: (
       <iframe
-        width="560"
+        title="blacklipstick"
+        width="auto"
         height="315"
         src="https://www.youtube.com/embed/3sOXiL05VSY"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+        allowFullScreen
+      />
     ),
     id: '11',
     sepContent: null,
@@ -138,8 +152,8 @@ const blogList = [
     image: mincake,
     alt: 'Minden cupcake',
     description: (
-      <div>
-        <p>
+      <span>
+        <span>
           Listening to this album always reminds me of when I was a young
           teenage girl, timidly discovering how complicated first love can be in
           the loft of my parent’s imaginary colonial home in some generic
@@ -153,12 +167,12 @@ const blogList = [
           coquettish vocals are backed by gorgeously simple and uncluttered
           instrumentals, a seductive blend of disco and funk and synthpop. You
           can enjoy this album anywhere.
-        </p>
-        <p>
+        </span>
+        <span>
           Favorite song:
           <b> Sheila</b>
-        </p>
-      </div>
+        </span>
+      </span>
     ),
     link: (
       <iframe
@@ -166,10 +180,10 @@ const blogList = [
         src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A37d3I8tpth0aPQoCaTdx8C"
         width="300"
         height="380"
-        frameborder="0"
+        frameBorder="0"
         allowtransparency="true"
         allow="encrypted-media"
-      ></iframe>
+      />
     ),
     id: '10',
     sepContent: null,
@@ -180,8 +194,8 @@ const blogList = [
     blogSideTags: 'backpack rap, Cool Calm Pete, hip hop, Lost The Album',
     image: ccpgif,
     description: (
-      <div>
-        <p>
+      <span>
+        <span>
           Known by his distinctively relaxed, almost lethargic flow, Queens
           rapper Cool Calm Pete drops hypnotic bars so casually delivered it
           seems practically conversational. Armed with an arsenal of stupidly
@@ -192,22 +206,23 @@ const blogList = [
           a backpack rap classic, Pete apparently took his own advice and has
           never made another solo album since. Fingers crossed he eventually
           finds his way back to us.
-        </p>
-        <p>
+        </span>
+        <span>
           Favorite song:
           <b> Dinner And A Movie</b>
-        </p>
-      </div>
+        </span>
+      </span>
     ),
     link: (
       <iframe
+        title="lost cool calm pete"
         src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A0SVnQiFDcdqgQqtrZugu7R"
         width="300"
         height="380"
-        frameborder="0"
+        frameBorder="0"
         allowtransparency="true"
         allow="encrypted-media"
-      ></iframe>
+      />
     ),
     id: '9',
     sepContent: null,
@@ -218,18 +233,18 @@ const blogList = [
     blogSideTags:
       'Anderson .Paak, Bas, hip hop, Isaiah Rashad, Junggigo, samples, Xscape',
     description: (
-      <div>
-        <p>
+      <span>
+        <span>
           I love samples of all kinds, whether I find them in hip hop, K-pop, or
-          Costco. Particularly, I'm interested in how artists, often in very
-          contrasting genres, can take the same sample and reinterpret it
+          Costco. Particularly, I&apos;m interested in how artists, often in
+          very contrasting genres, can take the same sample and reinterpret it
           uniquely. Sample clearance issues are so lame; if you wanted your
-          music to last and be remembered, wouldn't you want to let other
+          music to last and be remembered, wouldn&apos;t you want to let other
           artists be inspired by your music and use it and perpetuate it?
-          Anyway, here's the song behind one of my favorite samples of all time,
-          used in Sounds From Friday Morning by Isaiah Rashad.
-        </p>
-      </div>
+          Anyway, here&apos;s the song behind one of my favorite samples of all
+          time, used in Sounds From Friday Morning by Isaiah Rashad.
+        </span>
+      </span>
     ),
     link: (
       <iframe
@@ -237,10 +252,10 @@ const blogList = [
         src="https://open.spotify.com/embed/track/3sFoSCg2KoaCUrOeKYMqvI"
         width="300"
         height="380"
-        frameborder="0"
+        frameBorder="0"
         allowtransparency="true"
         allow="encrypted-media"
-      ></iframe>
+      />
     ),
     id: '8',
     sepContent: (
@@ -250,60 +265,60 @@ const blogList = [
           src="https://open.spotify.com/embed/track/3sFoSCg2KoaCUrOeKYMqvI"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
 
         <iframe
           title="Xscape - Who Can I Run To"
           src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A0wdaPticLmmqJdhgLDJ9zI"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
 
         <iframe
           title="Isaiah Rashad - Sounds From Friday Morning"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/4i4SoLdZd0Q"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+          allowFullScreen
+        />
 
         <iframe
           title="Junggigo - DLMN"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/mYDkrYdKq-A"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+          allowFullScreen
+        />
 
         <iframe
           title="Bas - Last Winter"
           src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A4xw3qwy1dr3TLNQ4K6sYNz"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
 
         <iframe
           title="Anderson Paak - Might Be"
           src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A2WlOO5UM3eoEQt7Z2z3PU1"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
-        ></iframe>
+        />
       </div>
     ),
   },
@@ -313,8 +328,8 @@ const blogList = [
     blogSideTags:
       '60s, Alex Turner, Arctic Monkeys, Bond, James Bond, rock, The Last Shadow Puppets',
     description: (
-      <div>
-        <p>
+      <span>
+        <span>
           Arctic Monkeys frontman Alex Turner teams up with The Rascals’ Miles
           Kane to make the perfect soundtrack to a Bond movie if it was ever a
           Western. Heavily influenced by equal parts ’60s English pop rock and
@@ -322,12 +337,12 @@ const blogList = [
           swaying to lush string arrangements and yearning harmonies while
           Alex’s signature songwriting will leave you with “paper cuts from the
           love letters you never gave him.”
-        </p>
-        <p>
+        </span>
+        <span>
           Favorite song:
           <b> Meeting Place</b>
-        </p>
-      </div>
+        </span>
+      </span>
     ),
     link: (
       <iframe
@@ -348,11 +363,11 @@ const blogList = [
     blogSideDate: 'September 1, 2017',
     blogSideTags: 'jazz, synth, The Kount, Verhoog',
     description: (
-      <p>
+      <span>
         Crooning over the Kount’s soulful synth-infused jazz chords, the
         existential Verhoog asks us: “What’s really real?” I’m not sure, but I
         know these tears on my keyboard are.
-      </p>
+      </span>
     ),
     link: (
       <iframe
@@ -374,8 +389,8 @@ const blogList = [
     blogSideTags: "hip hop, Jeremiah Jae, L'Orange",
     image: nightfamily,
     description: (
-      <div>
-        <p>
+      <span>
+        <span>
           This is the album I play when I feel like robbing banks with Tommy
           guns in my favorite trench coat. With his dark and smooth production
           and deftly utilized noir film samples, L’Orange shows us the gritty
@@ -383,12 +398,12 @@ const blogList = [
           alley behind a greasy speakeasy, Jeremiah Jae gives us a peek into the
           confident yet paranoid mind of a Prohibition-era crime lord. Together,
           they make your world feel black and white.
-        </p>
-        <p>
+        </span>
+        <span>
           Favorite song:
           <b> Underworld</b>
-        </p>
-      </div>
+        </span>
+      </span>
     ),
     id: '5',
     sepContent: null,
@@ -398,8 +413,16 @@ const blogList = [
     blogSideDate: 'August 31, 2017',
     blogSideTags: 'charlotte dos santos, cleo, jazz, oldies, soul',
     image: redclay,
-    description:
-      'Cleo is a classic soul album recorded in 2017 that has a cover of a “round” sung in the 13th century? As explained in a note to Fader, Red Clay is a metaphor comparing clay’s malleability and also fragility to “vapid people who lack identity and need others to give them a purpose.” Vapid or not, this smoky and sexy album will mold your hips into a grind and heads into a bob.',
+    description: (
+      <span>
+        Cleo is a classic soul album recorded in 2017 that has a cover of a
+        “round” sung in the 13th century? As explained in a note to Fader, Red
+        Clay is a metaphor comparing clay’s malleability and also fragility to
+        “vapid people who lack identity and need others to give them a purpose.”
+        Vapid or not, this smoky and sexy album will mold your hips into a grind
+        and heads into a bob.
+      </span>
+    ),
     link: (
       <iframe
         title="Cleo"
@@ -419,13 +442,13 @@ const blogList = [
     blogSideDate: 'August 30, 2017',
     blogSideTags: 'hip hop, isaiah rashad, tde',
     description: (
-      <p>
+      <span>
         Isaiah originally planned to use a sample of George Benson’s soulful
         guitar in Find A Topic, but unfortunately it couldn’t get cleared and he
         was forced to reproduce it himself. Isaiah and crew did a good job, but
         of course the original guitar is impossible to recreate perfectly. Here
         is the original, produced by Free P and J.LBS.
-      </p>
+      </span>
     ),
     link: (
       <iframe
@@ -446,11 +469,11 @@ const blogList = [
     blogSideDate: 'August 30, 2017',
     blogSideTags: '80s, Anna Wise, groovy, MNDSGN',
     description: (
-      <p>
-        MNDSGN's funky basslines and Anna Wise showing us why she's one of
-        Kendrick Lamar's favorite collabs (Real, These Walls,
+      <span>
+        MNDSGN&apos;s funky basslines and Anna Wise showing us why she&apos;s
+        one of Kendrick Lamar&apos;s favorite collabs (Real, These Walls,
         Institutionalized.)
-      </p>
+      </span>
     ),
     link: (
       <iframe
@@ -473,7 +496,7 @@ const blogList = [
     image: weekendfly,
     alt: 'Weekend Fly To The Sun by Toshiki Kadomatsu',
     description: (
-      <p>
+      <span>
         City Pop is a genre from 1980’s Japan and is a smooth amalgamation of
         Western influenced sounds like funk, rock, and jazz. During their
         unprecedented economic boom, Japan started putting more and more stereos
@@ -483,7 +506,7 @@ const blogList = [
         across it in a fighting game forum: on a thread about Chun Li’s latest
         businesswoman-themed alt costume, someone posted Office Lady by Toshiki
         Kadomatsu. This is some of the best stuff I’ve found since then.
-      </p>
+      </span>
     ),
     link: (
       <iframe
@@ -502,9 +525,7 @@ const blogList = [
 ];
 
 export default blogList;
-
-{
-  /* 
+/* 
 name: '',
 blogSideDate: '',
 blogSideTags: '',
@@ -515,4 +536,3 @@ link: ,
 id: ,
 sepContent: ,
 */
-}
