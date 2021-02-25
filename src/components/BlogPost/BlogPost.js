@@ -11,9 +11,10 @@ const styles = (theme) => ({
     flexGrow: 1,
   },
   description: {
-    padding: `${theme.spacing(2)}px ${theme.spacing(2)}px ${theme.spacing(
-      2
-    )}px 0px`,
+    // margin: `${theme.spacing(2)}px ${theme.spacing(2)}px ${theme.spacing(
+    //   2
+    // )}px 0px`,
+    margin: '16px 16px',
     marginRight: '20px',
     textAlign: 'left',
     color: 'black',
@@ -40,12 +41,6 @@ const styles = (theme) => ({
   mediaContainer: {
     marginBottom: '50px',
   },
-  // red: {
-  //   color: 'red',
-  // },
-  // blue: {
-  //   color: 'blue',
-  // },
   link: {
     fontSize: 36,
     fontFamily: 'Inconsolata',
@@ -93,6 +88,8 @@ function BlogPost(props) {
     width,
   } = props;
 
+  const smallScreen = width === 'xs';
+
   return (
     <Container>
       <Grid container spacing={3}>
@@ -102,22 +99,19 @@ function BlogPost(props) {
         </Grid>
         <Grid item lg={9} xs={12}>
           <Link
-            className={width === 'xs' ? classes.linkSmall : classes.link}
+            className={smallScreen ? classes.linkSmall : classes.link}
             to={{
               pathname: `/blogs/${id}`,
             }}
           >
             <span>{name}</span>
           </Link>
-          {/* <div
-            className={props.width === 'xs' ? classes.red : classes.blue}
-          >{`Current width: ${props.width}`}</div> */}
           {image && <img className={classes.image} src={image} alt={alt} />}
-          <p
+          <div
             className={width === 'xs' ? classes.descSmall : classes.description}
           >
             {description}
-          </p>
+          </div>
           <div className={classes.mediaContainer}>{link}</div>
         </Grid>
       </Grid>
@@ -131,9 +125,9 @@ function BlogPost(props) {
 BlogPost.defaultProps = {
   image: '',
   alt: '',
+  link: '',
 };
 
-// export default withStyles(styles)(BlogPost);
 BlogPost.propTypes = {
   classes: PropTypes.object.isRequired,
   blogSideDate: PropTypes.string.isRequired,
@@ -141,8 +135,9 @@ BlogPost.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string,
   alt: PropTypes.string,
-  description: PropTypes.object.isRequired,
-  link: PropTypes.object.isRequired,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+    .isRequired,
+  link: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   id: PropTypes.string.isRequired,
   // divider: PropTypes.object.isRequired,
   width: PropTypes.string.isRequired,
