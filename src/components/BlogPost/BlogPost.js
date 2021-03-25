@@ -14,7 +14,7 @@ const styles = (theme) => ({
     // margin: `${theme.spacing(2)}px ${theme.spacing(2)}px ${theme.spacing(
     //   2
     // )}px 0px`,
-    margin: '16px 16px',
+    margin: '75px 0px 30px 0px',
     marginRight: '20px',
     textAlign: 'left',
     color: 'black',
