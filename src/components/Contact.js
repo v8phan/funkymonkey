@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import axios from 'axios';
 import { Grid, Container } from '@material-ui/core';
-import { findByLabelText } from '@testing-library/dom';
 
 const styles = (theme) => ({
   title: {
@@ -13,19 +12,15 @@ const styles = (theme) => ({
     margin: '30px 20px 50px 20px',
     textAlign: 'left',
     color: 'black',
-    opacity: 0.8,
     fontFamily: 'Roboto',
     fontWeight: 'bold',
   },
   content: {
-    backgroundColor: 'red',
   },
   email: {
-    backgroundColor: 'orange',
     margin: '30px 20px 20px 20px',
   },
   message: {
-    backgroundColor: 'blue',
     margin: '30px 20px 20px 20px',
   },
   submit: {
@@ -80,9 +75,9 @@ class Contact extends Component {
           <div >
             <h1 className={classes.title}>Contact Me</h1>
 
-            <span className={classes.paragraph}>
+            <p className={classes.paragraph}>
               Email me if you want to give me a job or something.
-            </span>
+            </p>
             <form onSubmit={this.handleSubmit}>
               <Grid item xs={12} sm={6} lg={6} className={classes.email}>
                 <label>
