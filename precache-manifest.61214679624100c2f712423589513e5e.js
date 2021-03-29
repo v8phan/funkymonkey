@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0789f0c9c6ae818b3315e8473a16e8a6",
+    "revision": "97cb41239265c5a71b163e0ebc77617e",
     "url": "/funkymonkey/index.html"
   },
   {
-    "revision": "b8e1f3c5e42dbc6798e5",
+    "revision": "54c3299afef479042fa3",
     "url": "/funkymonkey/static/css/2.799c978e.chunk.css"
   },
   {
-    "revision": "0b592f07f2c84ddc5d08",
+    "revision": "b6dcb15660d1b3d5a6db",
     "url": "/funkymonkey/static/css/main.ceedd3e6.chunk.css"
   },
   {
-    "revision": "b8e1f3c5e42dbc6798e5",
-    "url": "/funkymonkey/static/js/2.77b16da4.chunk.js"
+    "revision": "54c3299afef479042fa3",
+    "url": "/funkymonkey/static/js/2.c3bb42eb.chunk.js"
   },
   {
     "revision": "89ea5e0ed13930f7b9c9c2f392e27cfe",
-    "url": "/funkymonkey/static/js/2.77b16da4.chunk.js.LICENSE.txt"
+    "url": "/funkymonkey/static/js/2.c3bb42eb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0b592f07f2c84ddc5d08",
-    "url": "/funkymonkey/static/js/main.93d6dbbb.chunk.js"
+    "revision": "b6dcb15660d1b3d5a6db",
+    "url": "/funkymonkey/static/js/main.c5746238.chunk.js"
   },
   {
     "revision": "9f1e13c0676a43e5bee8",
