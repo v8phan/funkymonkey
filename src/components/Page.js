@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import BlogPost from './BlogPost/BlogPost';
 import blogList from './BlogPost/blogs';
 import Sidebar from './Sidebar';
+import Footer from './Footer';
 
 const styles = (theme) => ({
   content: {
@@ -50,6 +51,7 @@ function Page(props) {
           </Grid>
         </Grid>
       </Container>
+      <Footer />
     </div>
   );
 }

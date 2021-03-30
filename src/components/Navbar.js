@@ -15,10 +15,13 @@ const styles = {
     marginRight: 'auto',
   },
   navbar: {
-    backgroundColor: 'dark blue',
+    backgroundColor: 'green',
   },
   navbarButtons: {
     color: 'white',
+  },
+  link: {
+    textDecoration: 'none',
   },
   titleSmall: {
     marginRight: 'auto',
@@ -39,13 +42,13 @@ function Navbar(props) {
           >
             The Funky Monkey
           </Typography>
-          <Link to="/">
+          <Link to="/" className={classes.link}>
             <Button className={classes.navbarButtons}>Home</Button>
           </Link>
-          <Link to="/about">
+          <Link to="/about" className={classes.link}>
             <Button className={classes.navbarButtons}>About</Button>
           </Link>
-          <Link to="/contact">
+          <Link to="/contact" className={classes.link}>
             <Button className={classes.navbarButtons}>Contact</Button>
           </Link>
         </Toolbar>

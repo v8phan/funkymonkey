@@ -2,7 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import { Grid, Container } from '@material-ui/core';
-
+import Footer from '../Footer';
 import blogList from './blogs';
 
 const styles = {
@@ -55,6 +55,7 @@ function postSeparate(props) {
             </Grid>
           );
         })}
+      <Footer />
     </Container>
   );
 }

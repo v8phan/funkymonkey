@@ -45,28 +45,30 @@ class Footer extends Component {
     }
 
     return (
-      <div className={classes.footer}>
-        <Container>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={6} className={classes.footerTitle}>
-              <span
-                className={classes.websiteNameFooter}
-                tabIndex={0}
-                role="button"
-                focusable
-                onClick={handleOnClick}
-                onKeyPress={handleOnClick}
-              >
-                The Funky Monkey
-              </span>
+      <div>
+        <div className={classes.footer}>
+          <Container>
+            <Grid container spacing={2}>
+              <Grid item xs={12} md={6} className={classes.footerTitle}>
+                <span
+                  className={classes.websiteNameFooter}
+                  tabIndex={0}
+                  role="button"
+                  focusable
+                  onClick={handleOnClick}
+                  onKeyPress={handleOnClick}
+                >
+                  The Funky Monkey
+                </span>
+              </Grid>
+              <Grid item xs={12} md={6} className={classes.socialFooter}>
+                <a href="https://www.github.com">
+                  <GitHubIcon className={classes.gitHubIcon} />
+                </a>
+              </Grid>
             </Grid>
-            <Grid item xs={12} md={6} className={classes.socialFooter}>
-              <a href="https://www.github.com">
-                <GitHubIcon className={classes.gitHubIcon} />
-              </a>
-            </Grid>
-          </Grid>
-        </Container>
+          </Container>
+        </div>
       </div>
     );
   }
