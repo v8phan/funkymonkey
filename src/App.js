@@ -42,7 +42,7 @@ function App(props) {
           <Route path="/blogs/:id" component={postSeparate} />
         </Switch>
       </Router>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

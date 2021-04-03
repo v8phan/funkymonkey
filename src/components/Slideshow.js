@@ -17,7 +17,7 @@ const styles = {
       alignItems: 'center',
       justifyContent: 'center',
       backgroundSize: 'contain',
-      height: 300,
+      height: 270,
       position: 'relative',
     },
     '& span': {

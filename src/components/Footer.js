@@ -6,14 +6,15 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const styles = (theme) => ({
   footer: {
-    padding: 5,
+    padding: 20,
     position: 'relative',
-    textAlign: 'left',
     left: 0,
     bottom: 0,
     right: 0,
-    top: 20,
+    top: 0,
     backgroundColor: 'black',
+    display: 'flex',
+    flexFlow: 'row wrap',
   },
   footerTitle: {
     textAlign: 'left',
@@ -48,8 +49,8 @@ class Footer extends Component {
       <div>
         <div className={classes.footer}>
           <Container>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} className={classes.footerTitle}>
+            <Grid>
+              <Grid item xs={12} md={6} lg={6} className={classes.footerTitle}>
                 <span
                   className={classes.websiteNameFooter}
                   tabIndex={0}
@@ -61,7 +62,7 @@ class Footer extends Component {
                   The Funky Monkey
                 </span>
               </Grid>
-              <Grid item xs={12} md={6} className={classes.socialFooter}>
+              <Grid item xs={12} md={6} lg={6} className={classes.socialFooter}>
                 <a href="https://www.github.com">
                   <GitHubIcon className={classes.gitHubIcon} />
                 </a>

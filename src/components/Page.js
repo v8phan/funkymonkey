@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import BlogPost from './BlogPost/BlogPost';
 import blogList from './BlogPost/blogs';
 import Sidebar from './Sidebar';
-import Footer from './Footer';
 
 const styles = (theme) => ({
   content: {
@@ -24,7 +23,7 @@ function Page(props) {
   return (
     <div className={classes.content}>
       <Container>
-        <Grid container spacing={4}>
+        <Grid container spacing={1}>
           <Grid item xs={12} sm={8}>
             <Paper className={classes.paper}>
               {blogList.map((blog, index) => {
@@ -51,7 +50,6 @@ function Page(props) {
           </Grid>
         </Grid>
       </Container>
-      <Footer />
     </div>
   );
 }

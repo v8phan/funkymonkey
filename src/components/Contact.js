@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import axios from 'axios';
 import { Grid, Container } from '@material-ui/core';
-import Footer from './Footer';
 
 const styles = (theme) => ({
   title: {
@@ -25,14 +24,14 @@ const styles = (theme) => ({
   submit: {
     margin: '20px 20px 20px 20px'
   },
-  main: {
+  content: {
     height: '100vh',
     position: 'relative',
     display: 'flex',
     flexDirection: 'column',
     flex: 'auto',
   },
-  content: {
+  main: {
     flex: '1 0 auto',
     height: '100%',
   },
@@ -79,10 +78,10 @@ class Contact extends Component {
     const { classes, content } = this.props;
 
     return (
-      <div className={classes.content}>
+      <div className={classes.main}>
       <Container >
         <Grid container spacing={6}>
-          <div className={classes.main}>
+          <div className={classes.content}>
             <h1 className={classes.title}>Contact Me</h1>
 
             <p className={classes.paragraph}>
@@ -116,7 +115,6 @@ class Contact extends Component {
           </div>
         </Grid>
       </Container>
-      <Footer />
       </div>
     );
   }
